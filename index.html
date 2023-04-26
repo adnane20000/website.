@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shush!</title>
+	<style>    
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+		body {
+			background: #000;
+		}
+		video {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: -100;
+			transform: translateX(-50%) translateY(-50%);
+		}
+		h1 {
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 48px;
+			text-shadow: 0px 0px 30px rgba(255,255,255,0.8);
+			text-align: center;
+			z-index: 1;
+		}
+		.button {
+			position: absolute;
+            font-family: 'Fira Code', monospace;
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: rgba(255,255,255,0.8);
+			border: 2px solid white;
+			color: black;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 24px;
+			margin: 20px auto;
+			cursor: pointer;
+			z-index: 1;
+		}
+        
+		.button:hover {
+			background-color: white;
+			color: black;
+			transition: all 0.3s ease-in-out;
+        }
+.container{
+  display: inline-block;
+  font-family: 'Fira Code', monospace;
+  font-size: 24px;
+  animation:typing 3s linear infinite;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 1.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+  animation:typing 3s linear infinite;
+
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.logo{
+    height: 200px;
+    position: absolute;
+    right: 40%;
+    top: 0%;
+}
+
+@media (max-width: 768px){
+    .logo{
+    height: 200px;
+    position: absolute;
+    right: 35%;
+    top: 0%;
+    }
+    .button {
+			position: absolute;
+            font-family: 'Fira Code', monospace;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: rgba(255,255,255,0.8);
+			border: 2px solid white;
+			color: black;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 24px;
+			margin: 20px auto;
+			cursor: pointer;
+			z-index: 1;
+	}
+}
+	</style>
+</head>
+<body>
+    <img src="info X space.png" class = "logo">
+    <video autoplay muted loop>
+	<source src="stars.mp4" type="video/mp4">
+	</video>
+    <div class="container">	<h1 class="typed">Find Out Your Mission</h1></div>
+	<a href="puzzle1.html" class="button">No going back once you click me</a>
+</body>
+</html>
